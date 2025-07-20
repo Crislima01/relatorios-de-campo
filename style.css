@@ -1,0 +1,100 @@
+/* Estilo geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #005A9C;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Container do formulário */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+}
+
+/* Inputs e selects */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+/* Checkbox estilos */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  margin-top: 4px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+/* Para os labels dos checkboxes ficarem na mesma linha */
+label > input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+label > span {
+  vertical-align: middle;
+}
+
+/* Botão enviar */
+button[type="submit"] {
+  background-color: #005A9C;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #00487c;

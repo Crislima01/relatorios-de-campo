@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatórios de Campo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Relatórios de Campo</h1>
+    <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+    }
+
+    header {
+      background-color: #005A9C;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .form-container {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1000px;
+      border: none;
+    }
+  </style>
+  </header>
+
+  <main>
+    <form action="#" method="POST">
+      <label>
+        Nome do publicador:<br />
+        <input type="text" name="nome" required />
+      </label>
+
+      <label>
+        Grupo:<br />
+        <select name="grupo" required>
+          <option value="">Selecione...</option>
+          <option value="Glauberto">Glauberto</option>
+          <option value="Danilo">Danilo</option>
+          <option value="Vieira">Vieira</option>
+          <option value="Valter">Valter</option>
+        </select>
+      </label>
+
+      <label>
+        Mês:<br />
+        <select name="mes" required>
+          <option value="">Selecione...</option>
+          <option>Janeiro</option>
+          <option>Fevereiro</option>
+          <option>Março</option>
+          <option>Abril</option>
+          <option>Maio</option>
+          <option>Junho</option>
+          <option>Julho</option>
+          <option>Agosto</option>
+          <option>Setembro</option>
+          <option>Outubro</option>
+          <option>Novembro</option>
+          <option>Dezembro</option>
+        </select>
+      </label>
+
+      <label>
+        Foi pioneiro auxiliar este mês
+  <input type="checkbox" name="pioneiro_auxiliar" value="Sim" />
+  
+</label>
+
+<label>
+     É pioneiro regular
+  <input type="checkbox" name="pioneiro_regular" value="Sim" />
+ 
+</label>
+
+      <label>
+        Estudos bíblicos:<br />
+        <input type="number" name="estudos_biblicos" min="0" required />
+      </label>
+
+      <label>
+        Total de horas no ministério:<br />
+        <input type="number" name="horas" min="0" required />
+      </label>
+
+      <label>
+        Comentários adicionais:<br />
+        <textarea name="comentarios" rows="4"></textarea>
+      </label>
+
+      <button type="submit">Enviar relatório</button>
+    </form>
+  </main>
+</body>
+</html>
